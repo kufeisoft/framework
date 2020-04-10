@@ -1,0 +1,36 @@
+{
+  "type": "framework",
+  "name": "kufeisoft/framework",
+  "license": "MIT",
+  "keywords": ["framework", "kufeisoft"],
+  "homepage": "https://framework.kufeisoft.com",
+  "description": "Kufeisoft framework for ThinkPHP V6.0",
+  "authors": [
+    {
+      "name": "Alex XU",
+      "email": "xux851@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-gd": "*",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-iconv": "*",
+    "topthink/framework": "^6.0"
+  },
+  "autoload": {
+    "files": [
+      "src/common.php"
+    ],
+    "psr-4": {
+      "kufei\\": "src"
+    }
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "kufei\\InitService"
+      ]
+    }
+  }
+}
